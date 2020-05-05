@@ -1,6 +1,6 @@
 {
-    "name": "timacdonald/php-style-example",
-    "description": "PHP style rules for PHP-CS-Fixer",
+    "name": "iadambrown/php-cs-styles",
+    "description": "Adam's PHP style rules for PHP-CS-Fixer",
     "license": "MIT",
     "authors": [
         {
@@ -10,6 +10,10 @@
     ],
     "require": {
         "friendsofphp/php-cs-fixer": "^2.16"
+    }
+    ,
+    "require-dev": {
+        "roave/security-advisories": "dev-master"
     },
     "autoload": {
         "files": [
