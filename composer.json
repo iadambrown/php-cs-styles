@@ -1,0 +1,16 @@
+{
+    "name": "timacdonald/php-style-example",
+    "description": "Tim's shared PHP style rules for PHP-CS-Fixer",
+    "license": "MIT",
+    "require": {
+        "friendsofphp/php-cs-fixer": "^2.16"
+    },
+    "require-dev": {
+        "roave/security-advisories": "dev-master"
+    },
+    "autoload": {
+        "files": [
+            "./src/helpers.php"
+        ]
+    }
+}
