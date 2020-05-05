@@ -1,3 +1,11 @@
+### Installation:
+```
+composer require iadambrown/php-cs-styles --dev
+touch .php_cs.dist
+```
+
+.php_cs.dist
+```
 <?php
 
 $finder = PhpCsFixer\Finder::create()
@@ -10,3 +18,4 @@ $finder = PhpCsFixer\Finder::create()
     ]);
 
 return iAdamBrown\PhpCsStyles\styles($finder);
+```
