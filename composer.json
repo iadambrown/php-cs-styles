@@ -1,7 +1,13 @@
 {
     "name": "timacdonald/php-style-example",
-    "description": "Tim's shared PHP style rules for PHP-CS-Fixer",
+    "description": "PHP style rules for PHP-CS-Fixer",
     "license": "MIT",
+    "authors": [
+        {
+            "name": "Adam Brown",
+            "email": "iadambrown@gmail.com"
+        }
+    ],
     "require": {
         "friendsofphp/php-cs-fixer": "^2.16"
     },
@@ -12,5 +18,6 @@
         "files": [
             "./src/helpers.php"
         ]
-    }
+    },
+    "minimum-stability": "stable"
 }
