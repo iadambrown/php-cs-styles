@@ -1,7 +1,5 @@
 <?php
 
-// last reviewed: N/A
-
 // RULES: https://mlocati.github.io/php-cs-fixer-configurator/#version:2.16
 
 return [
@@ -139,7 +137,9 @@ return [
     'single_import_per_statement'                 => true,
     'single_line_after_imports'                   => true,
     'single_line_comment_style'                   => [
-        'comment_types' => ['hash'],
+        'comment_types' => [
+            'hash',
+        ],
     ],
     'single_quote'                                => true,
     'space_after_semicolon'                       => true,
