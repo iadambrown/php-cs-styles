@@ -6,6 +6,9 @@
 
 return [
     '@PSR2'                                       => true,
+    'align_multiline_comment'                     => [
+        'comment_type' => 'phpdocs_like',
+    ],
     'array_indentation'                           => true,
     'array_syntax'                                => ['syntax' => 'short'],
     'binary_operator_spaces'                      => [
@@ -14,19 +17,30 @@ return [
             '='  => 'align_single_space_minimal',
         ],
     ],
+    'blank_line_after_namespace'                  => true,
+    'blank_line_after_opening_tag'                => true,
     'blank_line_before_return'                    => true,
-    'braces'                                      => [
-        'allow_single_line_closure' => true,
+    'blank_line_before_statement'                 => [
+        'statements' => [
+            'return',
+        ],
     ],
+    'braces'                                      => true,
     'cast_spaces'                                 => true,
     'class_definition'                            => ['singleLine' => true],
     'combine_consecutive_unsets'                  => true,
     'concat_space'                                => ['spacing' => 'one'],
-    //'declare_equal_normalize'                     => ['spacing' => 'single'],
-    'final_class'                                 => false,
+    'declare_equal_normalize'                     => ['spacing' => 'single'],
+    'elseif'                                      => true,
+    'encoding'                                    => true,
+    //'final_class'                                 => false,
+    'full_opening_tag'                            => true,
+    'function_declaration'                        => ['closure_function_spacing' => 'none'],
     'function_typehint_space'                     => true,
     'hash_to_slash_comment'                       => true,
+    'heredoc_to_nowdoc'                           => true,
     'include'                                     => true,
+    'indentation_type'                            => true,
     'lowercase_cast'                              => true,
     'method_separation'                           => true,
     'native_function_casing'                      => true,
@@ -53,12 +67,18 @@ return [
     'no_whitespace_in_blank_line'                 => true,
     'not_operator_with_successor_space'           => true,
     'object_operator_without_whitespace'          => true,
+    'ordered_imports'                             => [
+        'sort_algorithm' => 'alpha',
+    ],
     'phpdoc_add_missing_param_annotation'         => true,
     //'phpdoc_align'                                => true,
     'phpdoc_indent'                               => true,
     'return_type_declaration'                     => true,
     'single_quote'                                => true,
     'single_blank_line_before_namespace'          => true,
+    'single_line_comment_style'                   => [
+        'comment_types' => ['hash'],
+    ],
     'ternary_operator_spaces'                     => true,
     'trailing_comma_in_multiline_array'           => true,
     'trim_array_spaces'                           => true,
