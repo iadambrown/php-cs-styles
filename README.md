@@ -1,3 +1,6 @@
+### Style Guide
+https://mlocati.github.io/php-cs-fixer-configurator
+
 ### Installation:
 ```
 composer require iadambrown/php-cs-styles --dev
