@@ -33,3 +33,14 @@ $finder = PhpCsFixer\Finder::create()
 
 return iAdamBrown\PhpCsStyles\styles($finder);
 ```
+
+### Execution
+```
+php-cs-fixer fix
+```
+or
+```
+php-cs-fixer fix --dry-run
+```
+
+NOTE: You may need to specify the full `./vendor/bin/php-cs-fixer` path depending on your `PATH` settings)
