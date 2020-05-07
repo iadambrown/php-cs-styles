@@ -40,7 +40,7 @@ return [
         'spacing' => 'one',
     ],
     'declare_equal_normalize'                     => [
-        'spacing' => 'single',
+        'space' => 'single',
     ],
     'elseif'                                      => true,
     'encoding'                                    => true,
