@@ -46,7 +46,7 @@ return [
     'encoding'                                    => true,
     //'final_class'                                 => false,
     'full_opening_tag'                            => true,
-    fully_qualified_strict_types                  => true,
+    'fully_qualified_strict_types'                => true,
     'function_declaration'                        => [
         'closure_function_spacing' => 'none',
     ],
