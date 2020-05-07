@@ -2,6 +2,17 @@
 https://mlocati.github.io/php-cs-fixer-configurator
 
 ### Installation:
+composer.json
+```
+"repositories": [
+    {
+        "type": "vcs",
+        "url": "https://github.com/iadambrown/php-cs-styles.git"
+    },
+],
+```
+
+Terminal:
 ```
 composer require iadambrown/php-cs-styles --dev
 touch .php_cs.dist
