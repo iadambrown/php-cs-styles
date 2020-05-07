@@ -1,7 +1,7 @@
-### Style Guide
+## Style Guide
 https://mlocati.github.io/php-cs-fixer-configurator
 
-### Installation:
+## Installation:
 composer.json
 ```
 "repositories": [
@@ -34,7 +34,7 @@ $finder = PhpCsFixer\Finder::create()
 return iAdamBrown\PhpCsStyles\styles($finder);
 ```
 
-### Execution
+## Execution
 ```
 php-cs-fixer fix
 ```
