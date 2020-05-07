@@ -46,10 +46,12 @@ return [
     'encoding'                                    => true,
     //'final_class'                                 => false,
     'full_opening_tag'                            => true,
+    fully_qualified_strict_types                  => true,
     'function_declaration'                        => [
         'closure_function_spacing' => 'none',
     ],
     'function_typehint_space'                     => true,
+    'global_namespace_import'                     => true,
     'hash_to_slash_comment'                       => true,
     'heredoc_to_nowdoc'                           => true,
     'include'                                     => true,
