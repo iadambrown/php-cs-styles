@@ -34,6 +34,9 @@ $finder = PhpCsFixer\Finder::create()
 return iAdamBrown\PhpCsStyles\styles($finder);
 ```
 
+PhpStorm Setup: 
+https://www.jetbrains.com/help/phpstorm/using-php-cs-fixer.html
+
 ## Execution
 ```
 ./vendor/bin/php-cs-fixer fix
