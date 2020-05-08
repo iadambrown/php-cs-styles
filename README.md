@@ -34,6 +34,11 @@ $finder = PhpCsFixer\Finder::create()
 return iAdamBrown\PhpCsStyles\styles($finder);
 ```
 
+.gitignore
+```
+.php_cs.cache
+```
+
 PhpStorm Setup: 
 https://www.jetbrains.com/help/phpstorm/using-php-cs-fixer.html
 
