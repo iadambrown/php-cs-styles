@@ -13,8 +13,8 @@ return [
     ],
     'binary_operator_spaces'                      => [
         'operators' => [
-            '=>' => 'align_single_space_minimal',
-            '='  => 'align_single_space_minimal',
+            '=>' => 'align_single_space',
+            '='  => 'align_single_space',
         ],
     ],
     'blank_line_after_namespace'                  => true,
