@@ -68,6 +68,7 @@ return [
     'lowercase_keywords'                     => true,
     'magic_constant_casing'                  => true,
     'method_argument_space'                  => true,
+    'method_chaining_indentation'            => true,
     'method_separation'                      => true,
     'multiline_whitespace_before_semicolons' => true,
     'native_function_casing'                 => true,
