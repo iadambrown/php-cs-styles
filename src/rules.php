@@ -26,13 +26,9 @@ return [
     ],
     'braces'                                      => true,
     'cast_spaces'                                 => true,
-    'class_attributes_separation'                 => [
-        'elements' => [
-            'method',
-        ],
-    ],
+    'class_attributes_separation'                 => ['elements' => ['method' => 'one']],
     'class_definition'                            => [
-        'singleLine' => true,
+        'single_line' => true,
     ],
     'combine_consecutive_unsets'                  => true,
     'concat_space'                                => [
@@ -113,9 +109,9 @@ return [
     'phpdoc_add_missing_param_annotation'         => true,
     //'phpdoc_align'                                => true,
     'phpdoc_indent'                               => true,
-    'general_phpdoc_tag_rename'                   => true,
-    'phpdoc_inline_tag_normalizer'                => true,
-    'phpdoc_tag_type'                             => true,
+    'general_phpdoc_tag_rename'                   => ['replacements' => ['inheritDocs' => 'inheritDoc']],
+    'phpdoc_inline_tag_normalizer'                => ['tags' => ['example']],
+    'phpdoc_tag_type'                             => ['tags' => []],
     'phpdoc_no_access'                            => true,
     'phpdoc_no_package'                           => true,
     'phpdoc_no_useless_inheritdoc'                => true,
@@ -125,7 +121,14 @@ return [
     'phpdoc_to_comment'                           => true,
     'phpdoc_trim'                                 => true,
     'phpdoc_no_alias_tag'                         => [
-        'type' => 'var',
+        'replacements' => [
+            [
+                'property-read'  => 'property',
+                'property-write' => 'property',
+                'type'           => 'var',
+                'link'           => 'see'
+            ]
+        ]
     ],
     'phpdoc_types'                                => true,
     'phpdoc_var_without_name'                     => true,
