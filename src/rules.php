@@ -107,7 +107,7 @@ return [
         'sort_algorithm' => 'alpha',
     ],
     'phpdoc_add_missing_param_annotation'         => true,
-    //'phpdoc_align'                                => true,
+    'phpdoc_align'                                => ['align' => 'left'],
     'phpdoc_indent'                               => true,
     'general_phpdoc_tag_rename'                   => ['replacements' => ['inheritDocs' => 'inheritDoc']],
     'phpdoc_inline_tag_normalizer'                => ['tags' => ['example']],
@@ -122,12 +122,10 @@ return [
     'phpdoc_trim'                                 => true,
     'phpdoc_no_alias_tag'                         => [
         'replacements' => [
-            [
-                'property-read'  => 'property',
-                'property-write' => 'property',
-                'type'           => 'var',
-                'link'           => 'see'
-            ]
+            'property-read'  => 'property',
+            'property-write' => 'property',
+            'type'           => 'var',
+            'link'           => 'see'
         ]
     ],
     'phpdoc_types'                                => true,
