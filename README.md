@@ -16,10 +16,10 @@ Terminal:
 ```
 composer require friendsofphp/php-cs-fixer --dev
 composer require iadambrown/php-cs-styles --dev
-touch .php_cs.dist
+touch .php-cs-fixer.dist.php
 ```
 
-.php_cs.dist
+.php-cs-fixer.dist.php
 ```
 <?php
 
@@ -37,10 +37,10 @@ return iAdamBrown\PhpCsStyles\styles($finder);
 
 .gitignore
 ```
-.php_cs.cache
+.php-cs-fixer.cache
 ```
 
-PhpStorm Setup: 
+PhpStorm Setup:
 https://www.jetbrains.com/help/phpstorm/using-php-cs-fixer.html
 
 ## Execution

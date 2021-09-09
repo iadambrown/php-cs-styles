@@ -1,6 +1,7 @@
 <?php
 
 // RULES: https://mlocati.github.io/php-cs-fixer-configurator/#version:3.1
+// NOTES: https://github.com/FriendsOfPHP/PHP-CS-Fixer/blob/master/UPGRADE-v3.md
 
 return [
     '@PSR2'                                       => true,
