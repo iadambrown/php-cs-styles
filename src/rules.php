@@ -19,7 +19,6 @@ return [
     ],
     'blank_line_after_namespace'                  => true,
     'blank_line_after_opening_tag'                => true,
-    'blank_line_before_return'                    => true,
     'blank_line_before_statement'                 => [
         'statements' => [
             'return',
@@ -35,6 +34,7 @@ return [
     'concat_space'                                => [
         'spacing' => 'one',
     ],
+    'constant_case'                               => true,
     'declare_equal_normalize'                     => [
         'space' => 'single',
     ],
@@ -48,7 +48,6 @@ return [
     ],
     'function_typehint_space'                     => true,
     'global_namespace_import'                     => true,
-    'hash_to_slash_comment'                       => true,
     'heredoc_to_nowdoc'                           => true,
     'include'                                     => true,
     'increment_style'                             => [
@@ -60,16 +59,13 @@ return [
         'syntax' => 'short',
     ],
     'lowercase_cast'                              => true,
-    'lowercase_constants'                         => true,
     'lowercase_keywords'                          => true,
     'magic_constant_casing'                       => true,
     'method_argument_space'                       => true,
     'method_chaining_indentation'                 => true,
-    'method_separation'                           => true,
     'multiline_whitespace_before_semicolons'      => true,
     'native_function_casing'                      => true,
     //'new_with_braces' => true,
-    'no_multiline_whitespace_before_semicolons'   => true,
     'no_blank_lines_after_class_opening'          => true,
     'no_blank_lines_after_phpdoc'                 => true,
     'no_closing_tag'                              => true,
@@ -153,7 +149,7 @@ return [
     'switch_case_semicolon_to_colon'              => true,
     'switch_case_space'                           => true,
     'ternary_operator_spaces'                     => true,
-    'trailing_comma_in_multiline_array'           => true,
+    'trailing_comma_in_multiline'                 => ['elements' => ['arrays']],
     'trim_array_spaces'                           => true,
     'unary_operator_spaces'                       => true,
     'visibility_required'                         => true,
