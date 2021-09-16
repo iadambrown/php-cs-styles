@@ -40,9 +40,6 @@ return iAdamBrown\PhpCsStyles\styles($finder);
 .php-cs-fixer.cache
 ```
 
-PhpStorm Setup:
-https://www.jetbrains.com/help/phpstorm/using-php-cs-fixer.html
-
 ## Execution
 ```
 ./vendor/bin/php-cs-fixer fix
@@ -51,3 +48,22 @@ or
 ```
 ./vendor/bin/php-cs-fixer --dry-run
 ```
+
+## PhpStorm Setup
+
+https://www.jetbrains.com/help/phpstorm/using-php-cs-fixer.html
+
+Settings > PHP > Quality Tools > PHP CS Fixer > Config: Local, ... > Path: /Users/adambrown/Projects/factory-bucket-api/vendor/bin/php-cs-fixer
+
+Settings > Tools > External Tools > New or Edit existing:
+```
+Name: PHP-CS Fixer
+Program: $ContentRoot$/vendor/friendsofphp/php-cs-fixer/php-cs-fixer
+Arguments: --config=$ContentRoot$/.php-cs-fixer.dist.php --verbose fix $FileDir$/$FileName$
+Working Dir: $ContentRoot$/vendor/friendsofphp/php-cs-fixer
+
+YES sync files
+NO open console
+```
+
+Bind Opt/Cmd/L to already created PHP-CS Fixer External Tool
