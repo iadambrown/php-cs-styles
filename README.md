@@ -14,7 +14,6 @@ composer.json
 
 Terminal:
 ```
-composer require friendsofphp/php-cs-fixer --dev
 composer require iadambrown/php-cs-styles --dev
 touch .php-cs-fixer.dist.php
 ```
